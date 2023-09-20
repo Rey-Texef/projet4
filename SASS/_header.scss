@@ -17,10 +17,9 @@
     }
     &__arrow {
         position: absolute;
-        width: 30px;
-        height: 30px;
-        top: 32px;
+        font-size: 25px;
+        top: 17px;
         left: 17px;
-        color: $grey-arrow;
+        color: $grey;
     }
 }

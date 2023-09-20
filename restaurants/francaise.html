@@ -12,6 +12,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -26,12 +27,12 @@
             <div class="header__title">ohmyfood</div>
         </header>
         <main>
-            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="une assiette de déssert en premier plan, une autre ainsi qu'une tasse de café en arrière plan">
+            <img class="photo" src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="une assiette de déssert en premier plan, une autre ainsi qu'une tasse de café en arrière plan">
             <div class="menu">
                 <div class="resto">
-                    <div class="name">À la française</div>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
+                    <div class="resto__name">À la française</div>
+                    <i class="fa-regular fa-heart coeur-vide"></i>
+                    <i class="fa-solid fa-heart coeur-plein"></i>
                 </div>
                 <div class="entree">
                     <div class="name">ENTRÉES</div>
@@ -132,21 +133,19 @@
                 <div class="bouton-violet">Commander</div>
             </div>
         </main>
-        <footer>
-            <div class="omf">ohmyfood</div>
-            <div class="liensFooter">
+        <footer class="foot">
+            <div class="foot__title">ohmyfood</div>
+            <div class="foot__links">
                 <div class="ligneLogo">
                     <i class="fa-solid fa-utensils"></i>
-                    <i class=""></i>
                     <div>Proposer un restaurant</div>
                 </div>
                 <div class="ligneLogo">
                     <i class="fa-solid fa-handshake-angle"></i>
-                    <i class=""></i>
                     <div>Devenir partenaire</div>
                 </div>
                 <div>Mentions légales</div>
-                <div class="bouton">Contact</div>
+                <a href="#" class="bouton">Contact</a>
             </div>
         </footer>
     </div>

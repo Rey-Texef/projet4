@@ -12,6 +12,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -66,15 +67,15 @@
                         <a href="restaurants/palette.html">
                             <div class="image">
                                 <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-                                <div>Nouveau</div>
+                                <div class="image__new"><span>Nouveau</span></div>
                             </div>
                             <div class="subImg">
                                 <div class="textImg">
                                     <h2>La palette du goût</h2>
                                     <div>Ménilmontant</div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-heart coeur-vide"></i>
+                                <i class="fa-solid fa-heart coeur-plein"></i>
                             </div>
                         </a>
                     </article>
@@ -82,15 +83,15 @@
                         <a href="restaurants/note.html">
                             <div class="image">
                                 <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                                <div>Nouveau</div>
+                                <div class="image__new"><span>Nouveau</span></div>
                             </div>
                             <div class="subImg">
                                 <div class="textImg">
                                     <h2>La note enchantée</h2>
                                     <div>Charonne</div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-heart coeur-vide"></i>
+                                <i class="fa-solid fa-heart coeur-plein"></i>
                             </div>
                         </a>
                     </article>
@@ -100,15 +101,15 @@
                         <a href="restaurants/francaise.html">
                             <div class="image">
                                 <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-                                <div>Nouveau</div>
+                                <div class="image__new"><span>Nouveau</span></div>
                             </div>
                             <div class="subImg">
                                 <div class="textImg">
                                     <h2>À la française</h2>
                                     <div>Cité Rouge</div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-heart coeur-vide"></i>
+                                <i class="fa-solid fa-heart coeur-plein"></i>
                             </div>
                         </a>
                     </article>
@@ -116,36 +117,34 @@
                         <a href="restaurants/delice.html">
                             <div class="image">
                                 <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-                                <div>Nouveau</div>
+                                <div class="image__new"><span>Nouveau</span></div>
                             </div>
                             <div class="subImg">
                                 <div class="textImg">
                                     <h2>Le délice des sens</h2>
                                     <div>Folie-Méricourt</div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-regular fa-heart coeur-vide"></i>
+                                <i class="fa-solid fa-heart coeur-plein"></i>
                             </div>
                         </a>
                     </article>
                 </div>
             </div>
         </main>
-        <footer>
-            <div class="omf">ohmyfood</div>
-            <div class="liensFooter">
-                <div class="ligneLogo">
+        <footer class="foot">
+            <div class="foot__title">ohmyfood</div>
+            <div class="foot__links">
+                <div class="ligneLogo link-margin">
                     <i class="fa-solid fa-utensils"></i>
-                    <i class=""></i>
                     <div>Proposer un restaurant</div>
                 </div>
-                <div class="ligneLogo">
+                <div class="ligneLogo link-margin">
                     <i class="fa-solid fa-handshake-angle"></i>
-                    <i class=""></i>
                     <div>Devenir partenaire</div>
                 </div>
-                <div>Mentions légales</div>
-                <div class="bouton">Contact</div>
+                <div class="link-margin">Mentions légales</div>
+                <a href="#" class="bouton link-margin">Contact</a>
             </div>
         </footer>
     </div>
