@@ -10,6 +10,10 @@
     }
 }
 
+.image {
+    position: relative;
+}
+
 .image img {
     height: 201px;
     width: 100%;
@@ -18,13 +22,16 @@
 }
 
 .image__new {
+    display: flex;
     position: absolute;
     top: 13px;
-    right: -98px;
+    right: 15px;
     width: 80px;
     height: 29px;
     border-radius: 2px;
     background-color: $green;
+    justify-content: center;
+    align-items: center;
     z-index: +1;
     span {
         font-family: Roboto;
@@ -32,7 +39,6 @@
         font-weight: 500;
         line-height: 16px;
         letter-spacing: 0em;
-        text-align: center;
         color: $green-font;
     }
 }
