@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   height: 63px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0px 2px 4px 0px rgba(16, 16, 16, 0.3137254902);
 }
 .header__title {
   font-family: Shrikhand;
@@ -171,6 +171,10 @@ body {
   text-align: left;
 }
 
+body {
+  font-family: Roboto;
+}
+
 .coeur-vide {
   font-size: 25px;
 }
@@ -178,4 +182,118 @@ body {
 .coeur-plein {
   display: none !important;
   font-size: 25px;
+}
+
+.loca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 17px;
+  background-color: #EAEAEA;
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+
+.present {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.present__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 5px 50px;
+}
+.present__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 5px 30px;
+}
+.present__button {
+  width: 218px;
+}
+
+.bouton-violet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin: 40px 0;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 50px 20px 50px 30px;
+}
+.contents__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 72.38px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  margin-bottom: 25px;
+}
+.bouton__rond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10px;
+  height: 20px;
+  width: 20px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.bouton__icon {
+  color: #7E7E7E;
+  margin-right: 25px;
+}
+.bouton__icon--primary {
+  color: #9356DC;
+  margin-right: 25px;
+}
+.bouton__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
 }
