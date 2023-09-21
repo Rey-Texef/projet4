@@ -99,7 +99,6 @@ body {
 .carte {
   height: 300px;
   border-radius: 15px;
-  margin: 0 18px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   margin-bottom: 18px;
 }
@@ -204,6 +203,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #F6F6F6;
 }
 .present__title {
   font-size: 24px;
@@ -222,7 +222,8 @@ body {
   margin: 5px 30px;
 }
 .present__button {
-  width: 218px;
+  width: 60%;
+  min-width: 160px;
 }
 
 .bouton-violet {
@@ -264,6 +265,7 @@ body {
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   margin-bottom: 25px;
+  background-color: #F6F6F6;
 }
 .bouton__rond {
   display: flex;
@@ -296,4 +298,17 @@ body {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 50px 20px;
+}
+.restaurants__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
 }

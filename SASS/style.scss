@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: $second-backround;
     &__title {
         font-size: 24px;
         font-weight: 700;
@@ -55,7 +56,8 @@ body {
         margin: 5px 30px;
         }
     &__button {
-        width: 218px;
+        width: 60%;
+        min-width: 160px; 
     }
 }
 
@@ -98,6 +100,7 @@ body {
         border-radius: 20px;
         box-shadow: 0px 4px 15px 0px #00000026;
         margin-bottom: 25px;
+        background-color:  $second-backround;
         &__rond {
             display: flex;
             justify-content: center;
@@ -131,4 +134,17 @@ body {
             letter-spacing: 0em;
             text-align: left;
         }
+    }
+
+    .restaurants {
+        background-color: $second-backround;
+        padding: 50px 20px;
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 20px;
+            }
     }
