@@ -76,19 +76,19 @@ body {
     margin: 40px 20%;
     }
 
-    .contents {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin: 50px 20px 50px 30px;
-        &__title {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 28px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
+.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px 20px 50px 30px;
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
     }
+}
 
     .bouton {
         display: flex;
