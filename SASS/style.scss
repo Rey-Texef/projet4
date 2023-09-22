@@ -56,7 +56,6 @@ body {
         margin: 5px 30px;
         }
     &__button {
-        width: 60%;
         min-width: 160px; 
     }
 }
@@ -74,7 +73,7 @@ body {
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
-    margin: 40px 0;
+    margin: 40px 20%;
     }
 
     .contents {
@@ -121,10 +120,6 @@ body {
         }
         &__icon {
             color: $grey-tint;
-            margin-right: 25px;
-        }
-        &__icon--primary {
-            color: $primary-color;
             margin-right: 25px;
         }
         &__text {

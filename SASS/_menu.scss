@@ -1,7 +1,3 @@
-body {
-    width: 100%;
-}
-
 .photo {
     height: 275px;
     width: 100%;
@@ -10,7 +6,10 @@ body {
 
 .menu {
     border-radius: 40px 40px 0 0;
-    width: 100%;
+    top: -40px;
+    position: relative;
+    padding: 30px 15px;
+    background-color: $second-backround;
 }
 
 .resto {
@@ -18,7 +17,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 17px;
+    padding: 0px 17px;
     &__name {
         font-family: Shrikhand;
         font-size: 28px;

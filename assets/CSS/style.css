@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 63px;
   box-shadow: 0px 2px 4px 0px rgba(16, 16, 16, 0.3137254902);
 }
@@ -44,7 +43,6 @@
   margin-bottom: 16px;
 }
 .foot__links {
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -63,10 +61,6 @@
   margin-bottom: 7px;
 }
 
-body {
-  width: 100%;
-}
-
 .photo {
   height: 275px;
   width: 100%;
@@ -76,7 +70,10 @@ body {
 
 .menu {
   border-radius: 40px 40px 0 0;
-  width: 100%;
+  top: -40px;
+  position: relative;
+  padding: 30px 15px;
+  background-color: #F6F6F6;
 }
 
 .resto {
@@ -84,7 +81,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 17px;
+  padding: 0px 17px;
 }
 .resto__name {
   font-family: Shrikhand;
@@ -222,7 +219,6 @@ body {
   margin: 5px 30px;
 }
 .present__button {
-  width: 60%;
   min-width: 160px;
 }
 
@@ -239,7 +235,7 @@ body {
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0em;
-  margin: 40px 0;
+  margin: 40px 20%;
 }
 
 .contents {
@@ -286,10 +282,6 @@ body {
 }
 .bouton__icon {
   color: #7E7E7E;
-  margin-right: 25px;
-}
-.bouton__icon--primary {
-  color: #9356DC;
   margin-right: 25px;
 }
 .bouton__text {
