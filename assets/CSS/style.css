@@ -291,6 +291,9 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
+.bouton:hover {
+  color: #9356DC;
+}
 
 .restaurants {
   background-color: #F6F6F6;
