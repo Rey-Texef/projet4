@@ -24,6 +24,7 @@
         font-size: 28px;
         line-height: 41px;
         text-align: left;
+        margin: 0;
     }
 }
 
@@ -37,6 +38,10 @@
         &__line {
             border-top: 3px solid $tertiary-color;
             width: 40px;
+        }
+        &__name {
+            margin: 0 0 5px 0;
+            font-weight: 300;
         }
         }
 }

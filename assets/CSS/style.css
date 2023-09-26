@@ -1,4 +1,4 @@
-.bouton:hover {
+.bouton:hover { /*colore l'icone des boutons de la page d'accueil en violet*/
   color: #9356DC;
 }
 
@@ -92,6 +92,7 @@
   font-size: 28px;
   line-height: 41px;
   text-align: left;
+  margin: 0;
 }
 
 .plat {
@@ -106,6 +107,10 @@
 .plat__title__line {
   border-top: 3px solid #99E2D0;
   width: 40px;
+}
+.plat__title__name {
+  margin: 0 0 5px 0;
+  font-weight: 300;
 }
 
 .carte {
@@ -204,6 +209,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
 }
 .meal__card__text__side {
   font-size: 15px;
@@ -219,7 +225,7 @@
 .meal__card__price {
   display: flex;
   flex-direction: row;
-  align-items: last baseline;
+  align-items: flex-end;
   justify-content: end;
   padding: 15px 10px 15px 5px;
   width: 15%;
@@ -311,6 +317,7 @@ body {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
+  margin: 0;
 }
 
 .bouton {
@@ -364,5 +371,5 @@ body {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }

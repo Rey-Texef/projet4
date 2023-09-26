@@ -28,7 +28,7 @@
     width: 80px;
     height: 29px;
     border-radius: 2px;
-    background-color: $green;
+    background-color: $tertiary-color;
     justify-content: center;
     align-items: center;
     z-index: +1;
@@ -88,6 +88,7 @@
             letter-spacing: 0em;
             text-align: left;
             @include suspension;
+            margin: 0;
         }
         &__side {
             font-size: 15px;
@@ -101,7 +102,7 @@
     &__price {
         display: flex;
         flex-direction: row;
-        align-items: last baseline;
+        align-items: flex-end;
         justify-content: end;
         padding: 15px 10px 15px 5px;
         width: 15%;
