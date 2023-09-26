@@ -6,12 +6,9 @@
     height: 63px;
     box-shadow: 0px 2px 4px 0px #10101050;
     &__title {
-        font-family: Shrikhand;
+        @include shirkhand;
         font-size: 30px;
-        font-style: italic;
-        font-weight: 400;
         line-height: 44px;
-        letter-spacing: 0em;
         text-align: center;
     }
     &__arrow {

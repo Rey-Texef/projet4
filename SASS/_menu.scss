@@ -17,14 +17,26 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 17px;
+    padding: 0px 10px;
+    margin-bottom: 40px;
     &__name {
-        font-family: Shrikhand;
+        @include shirkhand;
         font-size: 28px;
-        font-style: italic;
-        font-weight: 400;
         line-height: 41px;
-        letter-spacing: 0em;
         text-align: left;
     }
+}
+
+.plat {
+    margin: 0 5px 40px 5px;
+    &__title {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        text-align: left;
+        &__line {
+            border-top: 3px solid $tertiary-color;
+            width: 40px;
+        }
+        }
 }

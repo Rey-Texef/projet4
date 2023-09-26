@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta meal__card__name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7eee16bfab.js" crossorigin="anonymous"></script>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"></head>
 
 <body>
     <div class="main-container">
@@ -34,102 +32,128 @@
                     <i class="fa-regular fa-heart coeur-vide"></i>
                     <i class="fa-solid fa-heart coeur-plein"></i>
                 </div>
-                <div class="entree">
-                    <div class="name">ENTRÉES</div>
-                    <div class="plat"> <!--Bouton-->
-                        <div>
-                            <div class="name">Tartare de poulpe acidulé</div>
-                            <div class="side">Aux zestes d'orange</div>
-                        </div>
-                        <div>
-                            <div class="prix">25</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
-                        <div>
-                            <div class="name">Velouté de légumes d'antan</div>
-                            <div class="side">Carotte, panais, topinambour</div>
-                        </div>
-                        <div>
-                            <div class="prix">35</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
-                        <div>
-                            <div class="name">Soupe à l'oignon</div>
-                            <div class="side">Revisitée</div>
-                        </div>
-                        <div>
-                            <div class="prix">20</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
+                <section class="plat">
+                    <div class="plat__title">
+                        <div class="plat__title__name">ENTRÉES</div>
+                        <div class="plat__title__line"></div>
                     </div>
-                </div>
-                <div class="plat">
-                    <div class="name">PLATS</div>
-                    <div class="plat"><!--Bouton-->
-                        <div>
-                            <div class="name">Coquilles Saint-Jacques</div>
-                            <div class="side">Accompagnées d'une purée de panais</div>
-                        </div>
-                        <div>
-                            <div class="prix">40</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
-                        <div>
-                            <div class="name">Magret de canard</div>
-                            <div class="side">Et parmentier de pommes de terre</div>
-                        </div>
-                        <div>
-                            <div class="prix">35</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
-                        <div>
-                            <div class="name">Pigeonneau d’Ille-et-Vilaine</div>
-                            <div class="side">Sur son lit de gnocchis aux légumes</div>
-                        </div>
-                        <div>
-                            <div class="prix">44</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
+                    <div class="meal">
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Tartare de poulpe acidulé</div>
+                                <div class="meal__card__text__side">Aux zestes d'orange</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>25</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Velouté de légumes d'antan</div>
+                                <div class="meal__card__text__side">Carotte, panais, topinambour</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>35</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Soupe à l'oignon</div>
+                                <div class="meal__card__text__side">Revisitée</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>20</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
                     </div>
-                </div>
-                <div class="dessert">
-                    <div class="name">DESSERTS</div>
-                    <div class="plat"><!--Bouton-->
-                        <div>
-                            <div class="name">Pétales de violettes glacés</div>
-                            <div class="side">Et purée de noisettes</div>
-                        </div>
-                        <div>
-                            <div class="prix">18</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
-                        <div>
-                            <div class="name">Fondant au chocolat</div>
-                            <div class="side">Revisité</div>
-                        </div>
-                        <div>
-                            <div class="prix">22</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
-                        <div>
-                            <div class="name">Millefeuille croustillant</div>
-                            <div class="side">Myrtilles et pâte d’amande</div>
-                        </div>
-                        <div>
-                            <div class="prix">23</div>
-                            <div class="euro">€</div>
-                        </div>
-                        <div class="check"></div>
+                </section>
+                <section class="plat">
+                    <div class="plat__title">
+                        <div class="plat__title__name">PLATS</div>
+                        <div class="plat__title__line"></div>
                     </div>
-                </div>
+                    <div class="meal">
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Coquilles Saint-Jacques</div>
+                                <div class="meal__card__text__side">Accompagnées d'une purée de panais</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>40</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Magret de canard</div>
+                                <div class="meal__card__text__side">Et parmentier de pommes de terre</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>35</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Pigeonneau d’Ille-et-Vilaine</div>
+                                <div class="meal__card__text__side">Sur son lit de gnocchis aux légumes</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>44</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                    </div>
+                </section>
+                <section class="plat">
+                    <div class="plat__title">
+                        <div class="plat__title__name">DESSERTS</div>
+                        <div class="plat__title__line"></div>
+                    </div>                    <div class="meal">
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Pétales de violettes glacés</div>
+                                <div class="meal__card__text__side">Et purée de noisettes</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>18</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Fondant au chocolat</div>
+                                <div class="meal__card__text__side">Revisité</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>22</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                        <article class="meal__card">
+                            <div class="meal__card__text">
+                                <div class="meal__card__text__name">Millefeuille croustillant</div>
+                                <div class="meal__card__text__side">Myrtilles et pâte d’amande</div>
+                            </div>
+                            <div class="meal__card__price">
+                                <div>23</div>
+                                <div>€</div>
+                            </div>
+                            <div class="meal__card__check"></div>
+                        </article>
+                    </div>
+                </section>
                 <div class="bouton-violet">Commander</div>
             </div>
         </main>

@@ -7,12 +7,9 @@
     background-color: $grey;
     color: $white;
     &__title {
-        font-family: Shrikhand;
+        @include shirkhand;
         font-size: 18px;
-        font-style: italic;
-        font-weight: 400;
         line-height: 26px;
-        letter-spacing: 0em;
         text-align: left;
         margin-bottom: 16px;
         }
@@ -20,7 +17,6 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
-        letter-spacing: 0em;
         text-align: left;
         gap: 10px;
         }
