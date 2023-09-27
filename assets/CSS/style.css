@@ -51,6 +51,19 @@
   text-align: left;
   gap: 10px;
 }
+@media (min-width: 767.98px) {
+  .foot {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .foot__title {
+    margin-left: 60px;
+  }
+  .foot__links {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .ligneLogo {
   display: flex;
@@ -61,6 +74,14 @@
 .link-margin {
   margin-bottom: 7px;
 }
+.link-margin--space {
+  margin-bottom: 7px;
+}
+@media (min-width: 767.98px) {
+  .link-margin--space {
+    margin-left: 30px;
+  }
+}
 
 .photo {
   height: 275px;
@@ -69,21 +90,32 @@
      object-fit: cover;
 }
 
+.menuBG {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 40px 40px 0 0;
   top: -40px;
   position: relative;
   padding: 30px 15px;
   background-color: #F6F6F6;
+  width: 100%;
+  max-width: 1055px;
 }
 
 .resto {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px;
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 307px;
 }
 .resto__name {
   font-family: Shrikhand;
@@ -92,11 +124,13 @@
   font-size: 28px;
   line-height: 41px;
   text-align: left;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 
 .plat {
   margin: 0 5px 40px 5px;
+  width: 100%;
+  max-width: 634px;
 }
 .plat__title {
   font-size: 16px;
@@ -302,22 +336,37 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
+  padding: 0 10px;
   margin: 40px 20%;
 }
 
 .contents {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 25px;
   margin: 50px 20px 50px 30px;
 }
 .contents__title {
+  width: 100%;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
+  max-width: 1030px;
+}
+.contents__buttons {
+  width: 100%;
+}
+@media (min-width: 767.98px) {
+  .contents__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
 }
 
 .bouton {
@@ -331,6 +380,12 @@ body {
   margin-bottom: 25px;
   background-color: #F6F6F6;
   color: #7E7E7E;
+}
+@media (min-width: 767.98px) {
+  .bouton {
+    width: 33%;
+    max-width: 322px;
+  }
 }
 .bouton__rond {
   display: flex;
@@ -365,6 +420,13 @@ body {
   background-color: #F6F6F6;
   padding: 50px 20px;
 }
+@media (min-width: 767.98px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .restaurants__title {
   font-size: 24px;
   font-weight: 700;
@@ -372,4 +434,23 @@ body {
   letter-spacing: 0em;
   text-align: left;
   margin: 0 0 20px 0;
+}
+@media (min-width: 767.98px) {
+  .restaurants__title {
+    width: 100%;
+    max-width: 1030px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 767.98px) {
+  .restaurants__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1030px;
+    gap: 10%;
+  }
+  .restaurants__list .carte {
+    width: 45%;
+  }
 }
