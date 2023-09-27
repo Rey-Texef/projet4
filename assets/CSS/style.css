@@ -9,20 +9,27 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #99E2D0;
+  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 1;
-  z-index: 9999;
+  z-index: 9998;
 }
 .loader__circle {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border: 5px solid #9356DC;
   border-top: 4px solid transparent;
   border-radius: 50%;
-  animation: spin 2s linear forwards, fadeOut 2.6s linear forwards;
+  animation: spin 2s linear forwards, fadeOut 3s linear forwards;
+}
+.loader__circle__icon {
+  z-index: 9999;
+  font-family: Shrikhand;
+  font-style: italic;
+  font-weight: 400;
+  animation: anti-spin 2s linear forwards;
 }
 
 body:not(.loaded) .loader {
@@ -41,6 +48,14 @@ body:not(.loaded) .loader {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes anti-spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 @keyframes fadeOut {
