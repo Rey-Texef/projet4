@@ -25,18 +25,28 @@
 
 .resto {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     width: 100%;
     max-width: 307px;
+    position: relative;
     &__name {
+        position: absolute;
+        left: 0;
+        top: 0;
         @include shirkhand;
         font-size: 28px;
         line-height: 41px;
         text-align: left;
         margin: 0 10px 0 0;
     }
+}
+
+.heart-icon--menu .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 0;
 }
 
 .plat {

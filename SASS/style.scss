@@ -17,21 +17,25 @@ body {
     position: relative;
 }
 
-.fa-heart {
+.heart-icon .fa-heart {
     position: absolute;
-    top: 50%;
-    right: 25px;
+    right: 5%;
+    top: 37px;
     font-size: 25px;
     transition: opacity 0.6s ease-in-out;
 }
 
-.heart-icon .coeur-plein {
+.coeur-plein {
     background: linear-gradient(to bottom, $primary-color, $secondary-color);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
     opacity: 0;
+}
+
+.coeur-plein, .coeur-vide {
+    font-size: 20px;
 }
 
 .loca {

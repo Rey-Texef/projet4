@@ -92,11 +92,11 @@ body:not(.loaded) .loader {
 }
 
 /*animation du coeur*/
-.heart-icon:hover .coeur-vide {
+.heart-icon:hover .coeur-vide, .heart-icon--menu:hover .coeur-vide {
   opacity: 0;
 }
 
-.heart-icon:hover .coeur-plein {
+.heart-icon:hover .coeur-plein, .heart-icon--menu:hover .coeur-plein {
   opacity: 1;
 }
 
@@ -210,13 +210,17 @@ body:not(.loaded) .loader {
 
 .resto {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   width: 100%;
   max-width: 307px;
+  position: relative;
 }
 .resto__name {
+  position: absolute;
+  left: 0;
+  top: 0;
   font-family: Shrikhand;
   font-style: italic;
   font-weight: 400;
@@ -224,6 +228,12 @@ body:not(.loaded) .loader {
   line-height: 41px;
   text-align: left;
   margin: 0 10px 0 0;
+}
+
+.heart-icon--menu .fa-heart {
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 
 .plat {
@@ -417,21 +427,25 @@ body {
   position: relative;
 }
 
-.fa-heart {
+.heart-icon .fa-heart {
   position: absolute;
-  top: 50%;
-  right: 25px;
+  right: 5%;
+  top: 37px;
   font-size: 25px;
   transition: opacity 0.6s ease-in-out;
 }
 
-.heart-icon .coeur-plein {
+.coeur-plein {
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+}
+
+.coeur-plein, .coeur-vide {
+  font-size: 20px;
 }
 
 .loca {

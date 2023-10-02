@@ -89,10 +89,10 @@ body:not(.loaded) .loader {
 
 /*animation du coeur*/
 
-.heart-icon:hover .coeur-vide {
+.heart-icon:hover .coeur-vide, .heart-icon--menu:hover .coeur-vide {
     opacity: 0;
 }
   
-  .heart-icon:hover .coeur-plein {
+  .heart-icon:hover .coeur-plein, .heart-icon--menu:hover .coeur-plein {
     opacity: 1;
 }
