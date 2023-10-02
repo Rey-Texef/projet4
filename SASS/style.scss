@@ -21,8 +21,7 @@ body {
     position: absolute;
     right: 5%;
     top: 37px;
-    font-size: 25px;
-    transition: opacity 0.6s ease-in-out;
+    @include coeur;
 }
 
 .coeur-plein {
