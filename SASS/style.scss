@@ -11,12 +11,27 @@ body {
     letter-spacing: 0em;
 }
 
-.coeur-vide {
-    font-size: 25px;
+.subImg {
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
-.coeur-plein {
-    display: none !important;
+
+.fa-heart {
+    position: absolute;
+    top: 50%;
+    right: 25px;
     font-size: 25px;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.heart-icon .coeur-plein {
+    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
 }
 
 .loca {
@@ -76,6 +91,7 @@ body {
     line-height: 19px;
     padding: 0 10px;
     margin: 40px 20%;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
 .contents {

@@ -58,3 +58,19 @@
         }
         }
 }
+
+.meal-1 {
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out 0.5s forwards;
+}
+
+.meal-2 {
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out 1s forwards;
+}
+
+.meal-3 {
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out 1.5s forwards;
+}
+

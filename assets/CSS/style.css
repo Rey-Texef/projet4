@@ -1,4 +1,5 @@
-.bouton:hover { /*colore l'icone des boutons de la page d'accueil en violet*/
+/*colore l'icone des boutons de la page d'accueil en violet*/
+.bouton:hover {
   color: #9356DC;
 }
 
@@ -66,6 +67,39 @@ body:not(.loaded) .loader {
     opacity: 0;
   }
 }
+/*Apparition de la coche au survol des plats*/
+.meal__card:hover .meal__card__check {
+  right: 0;
+}
+
+.meal__card:hover .meal__card__text {
+  width: 63%;
+}
+
+/*Apparition progressive des plats*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation de bouton-violet*/
+.bouton-violet:hover {
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.3764705882);
+  background: linear-gradient(to bottom, #FF8DEE, #BB7EFA);
+}
+
+/*animation du coeur*/
+.heart-icon:hover .coeur-vide {
+  opacity: 0;
+}
+
+.heart-icon:hover .coeur-plein {
+  opacity: 1;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -212,6 +246,21 @@ body:not(.loaded) .loader {
   font-weight: 300;
 }
 
+.meal-1 {
+  opacity: 0;
+  animation: fade-in 1.5s ease-in-out 0.5s forwards;
+}
+
+.meal-2 {
+  opacity: 0;
+  animation: fade-in 1.5s ease-in-out 1s forwards;
+}
+
+.meal-3 {
+  opacity: 0;
+  animation: fade-in 1.5s ease-in-out 1.5s forwards;
+}
+
 .carte {
   height: 300px;
   border-radius: 15px;
@@ -286,6 +335,8 @@ body:not(.loaded) .loader {
 .meal__card {
   display: flex;
   flex-direction: row;
+  position: relative;
+  overflow: hidden;
   margin: 12px 0;
   height: 69px;
   border-radius: 15px;
@@ -297,6 +348,7 @@ body:not(.loaded) .loader {
   justify-content: left;
   margin: 15px 0 15px 10px;
   width: 85%;
+  transition: width 0.3s ease-in-out;
 }
 .meal__card__text__name {
   font-size: 18px;
@@ -325,7 +377,7 @@ body:not(.loaded) .loader {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 15px 10px 15px 5px;
   width: 15%;
   font-size: 15px;
@@ -333,19 +385,53 @@ body:not(.loaded) .loader {
   line-height: 18px;
   text-align: center;
 }
+.meal__card__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: -15%;
+  height: 100%;
+  width: 15%;
+  max-width: 59px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transition: right 0.3s ease-in-out;
+}
+.meal__card__check__icon {
+  background-color: #FFFFFF;
+  color: #99E2D0;
+  padding: 5px;
+  border-radius: 50%;
+}
 
 body {
   font-family: Roboto;
   letter-spacing: 0em;
 }
 
-.coeur-vide {
-  font-size: 25px;
+.subImg {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
-.coeur-plein {
-  display: none !important;
+.fa-heart {
+  position: absolute;
+  top: 50%;
+  right: 25px;
   font-size: 25px;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.heart-icon .coeur-plein {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
 }
 
 .loca {
@@ -405,6 +491,7 @@ body {
   line-height: 19px;
   padding: 0 10px;
   margin: 40px 20%;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .contents {

@@ -1,8 +1,11 @@
-.bouton:hover {             /*colore l'icone des boutons de la page d'accueil en violet*/
+/*colore l'icone des boutons de la page d'accueil en violet*/
+
+.bouton:hover {
     color: $primary-color;
 }
 
 /* Styles pour le loader */
+
 .loader {
     position: fixed;
     top: 0;
@@ -54,4 +57,42 @@ body:not(.loaded) .loader {
 @keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+/*Apparition de la coche au survol des plats*/
+
+.meal__card:hover .meal__card__check {
+    right: 0;
+}
+
+.meal__card:hover .meal__card__text {
+    width: 63%;
+}
+
+/*Apparition progressive des plats*/
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*animation de bouton-violet*/
+
+.bouton-violet:hover {
+    box-shadow: 0px 6px 15px 0px #00000060;
+    background: linear-gradient(to bottom, $secondary-color-lighter, $primary-color-lighter);
+}
+
+/*animation du coeur*/
+
+.heart-icon:hover .coeur-vide {
+    opacity: 0;
+}
+  
+  .heart-icon:hover .coeur-plein {
+    opacity: 1;
 }
