@@ -58,6 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: $second-backround;
+    padding-bottom: 40px;
     &__title {
         font-size: 24px;
         font-weight: 700;
@@ -72,10 +73,10 @@ body {
         line-height: 21px;
         letter-spacing: 0em;
         text-align: center;
-        margin: 5px 30px;
+        margin: 5px 30px 27px 30px;
         }
     &__button {
-        min-width: 160px; 
+        min-width: 218px; 
     }
 }
 
@@ -84,7 +85,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 50px;
-    max-width: 220px;
     background: linear-gradient(to bottom, $secondary-color, $primary-color);
     color: $white;
     border-radius: 25px;
@@ -92,8 +92,6 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    padding: 0 10px;
-    margin: 40px 20%;
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
@@ -171,7 +169,7 @@ body {
 
     .restaurants {
         background-color: $second-backround;
-        padding: 50px 20px;
+        padding: 54px 20px 66px 20px;
         @media (min-width: 767.98px) {
             display: flex;
             flex-direction: column;

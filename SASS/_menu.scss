@@ -7,7 +7,7 @@
 .menuBG {
     display: flex;
     justify-content: center;
-    background-color: $white;
+    background-color: $second-backround;
 }
 
 .menu {
@@ -17,10 +17,13 @@
     border-radius: 40px 40px 0 0;
     top: -40px;
     position: relative;
-    padding: 30px 15px;
+    padding: 30px 15px 0 15px;
     background-color: $second-backround;
     width: 100%;
     max-width: 1055px;
+    &__bouton {
+        width: 186px;
+    }
 }
 
 .resto {

@@ -192,7 +192,7 @@ body:not(.loaded) .loader {
 .menuBG {
   display: flex;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #F6F6F6;
 }
 
 .menu {
@@ -202,10 +202,13 @@ body:not(.loaded) .loader {
   border-radius: 40px 40px 0 0;
   top: -40px;
   position: relative;
-  padding: 30px 15px;
+  padding: 30px 15px 0 15px;
   background-color: #F6F6F6;
   width: 100%;
   max-width: 1055px;
+}
+.menu__bouton {
+  width: 186px;
 }
 
 .resto {
@@ -471,6 +474,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
+  padding-bottom: 40px;
 }
 .present__title {
   font-size: 24px;
@@ -486,10 +490,10 @@ body {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  margin: 5px 30px;
+  margin: 5px 30px 27px 30px;
 }
 .present__button {
-  min-width: 160px;
+  min-width: 218px;
 }
 
 .bouton-violet {
@@ -497,7 +501,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
-  max-width: 220px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: #FFFFFF;
   border-radius: 25px;
@@ -505,8 +508,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
-  padding: 0 10px;
-  margin: 40px 20%;
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -588,7 +589,7 @@ body {
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 50px 20px;
+  padding: 54px 20px 66px 20px;
 }
 @media (min-width: 767.98px) {
   .restaurants {
